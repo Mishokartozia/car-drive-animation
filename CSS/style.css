@@ -1,4 +1,27 @@
-body {
-    background-image: url(https://images.wallpapersden.com/image/download/night-sky-stars_ZmlsZWuUmZqaraWkpJRmZ21lrWxnZQ.jpg);
-
+.night{
+    margin: 0 auto;
+    width: 1280px;
+    
+    background-image: url(https://github.com/Mishokartozia/car-drive-animation/blob/main/images/nightsky.png?raw=true)
+}
+.road{
+    margin: 0 auto;
+    width: 1280px;
+    height: 150px;
+    background-color: black;
+    position: relative;
+}
+.line{
+    
+    width: 1280px;
+    height: 2px;
+    background-color: yellow;
+    position: absolute;
+    top: 40%;
+    
+}
+.car{
+   
+    margin-left: 100px;
+ 
 }
