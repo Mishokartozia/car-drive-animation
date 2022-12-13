@@ -1,10 +1,22 @@
-.night{
-   
+.box{
     margin: 0 auto;
     width: 1280px;
-    position: relative;
+    height: 874px;
     
+    -webkit-box-shadow: 0px 3px 0px 2px rgba(0,0,0,0.1), 0px 6px 0px 4px rgba(0,0,0,0.1), 0px 9px 0px 6px rgba(0,0,0,0.1), 0px 12px 0px 8px rgba(0,0,0,0.1), 0px 15px 0px 10px rgba(0,0,0,0.1), 0px 18px 0px 12px rgba(0,0,0,0.1), 0px 21px 0px 14px rgba(0,0,0,0.1), 0px 24px 0px 16px rgba(0,0,0,0.1), 0px 27px 0px 18px rgba(0,0,0,0.1), 0px 30px 0px 20px rgba(0,0,0,0.1), 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 3px 0px 2px rgba(0,0,0,0.1), 0px 6px 0px 4px rgba(0,0,0,0.1), 0px 9px 0px 6px rgba(0,0,0,0.1), 0px 12px 0px 8px rgba(0,0,0,0.1), 0px 15px 0px 10px rgba(0,0,0,0.1), 0px 18px 0px 12px rgba(0,0,0,0.1), 0px 21px 0px 14px rgba(0,0,0,0.1), 0px 24px 0px 16px rgba(0,0,0,0.1), 0px 27px 0px 18px rgba(0,0,0,0.1), 0px 30px 0px 20px rgba(0,0,0,0.1), 5px 5px 15px 5px rgba(0,0,0,0);
+}
+.night{
+    border: 1px solid black;
+    overflow: hidden;
+  
+    margin: 0 auto;
+    width: 1280px;
+    height: 874px;
+    position: relative;
     background-image: url(https://github.com/Mishokartozia/car-drive-animation/blob/main/images/nightsky2.png?raw=true)
+    
+   
 }
 .moon{
     position: absolute;
@@ -28,27 +40,35 @@
   width: 200px;
   height: 200px;
     animation-name: plane;
-	animation-duration: 10s;
+	animation-duration: 5s;
 	animation-delay:1s ;
 	animation-timing-function:linear ;
-	
+	background-repeat: repeat-x;
 	animation-iteration-count:infinite ;
 }
 @keyframes plane{
+    100% {
+        transform: translateX(-2950px);
+      }
     form{right:10%;}
     to{left: 0%;}
+
 }
 .city{
     position: relative;
-    animation-name: city;
-	/* animation-duration: 10s;
+    /* animation-name: city;
+	animation-duration: 10s;
 	animation-delay:1s ;
-	animation-timing-function:eses-in-out ;
+	animation-timing-function: linear ;
 	
-	animation-iteration-count:infinite ; */
-    
+	animation-iteration-count:infinite ;
+}
+@keyframes city{
+    form{right:0%;}
+    to{left: 0%;}
+} */
     background-repeat: repeat-x;
-    animation: moveRight 9s linear infinite;
+    animation: moveRight 20s linear infinite;
 }
 @keyframes moveRight {
     100% {
@@ -90,6 +110,9 @@
 
 }
 @keyframes zebra{
+    100% {
+        transform: translateX(-1000px);
+      }
     form{right:100%;}
     to{left: 0%;}
 }
@@ -130,8 +153,8 @@
  
 }
 @keyframes car{
-    form{top:0%;}
-    to{bottom: 0%;}
+    from{bottom:0%;}
+    to{bottom: 1%;}
     
 }
 
