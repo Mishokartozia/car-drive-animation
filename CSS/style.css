@@ -1,9 +1,62 @@
 .night{
+   
     margin: 0 auto;
     width: 1280px;
+    position: relative;
     
-    background-image: url(https://github.com/Mishokartozia/car-drive-animation/blob/main/images/nightsky.png?raw=true)
+    background-image: url(https://github.com/Mishokartozia/car-drive-animation/blob/main/images/nightsky2.png?raw=true)
 }
+.moon{
+    position: absolute;
+    animation-name: moon;
+	animation-duration: 2s;
+	animation-delay:1s ;
+	animation-timing-function:eses-in-out ;
+	
+	animation-iteration-count:infinite ;
+}
+@keyframes moon{
+    0% {left:0%;}
+    25%{left: 2%;}
+    50%{top: 2%;}
+    100%{left: 0%;}
+}
+
+.plane{
+  position: absolute;
+  left: 82%;
+  width: 200px;
+  height: 200px;
+    animation-name: plane;
+	animation-duration: 10s;
+	animation-delay:1s ;
+	animation-timing-function:linear ;
+	
+	animation-iteration-count:infinite ;
+}
+@keyframes plane{
+    form{right:10%;}
+    to{left: 0%;}
+}
+.city{
+    position: relative;
+    animation-name: city;
+	/* animation-duration: 10s;
+	animation-delay:1s ;
+	animation-timing-function:eses-in-out ;
+	
+	animation-iteration-count:infinite ; */
+    
+    background-repeat: repeat-x;
+    animation: moveRight 9s linear infinite;
+}
+@keyframes moveRight {
+    100% {
+      transform: translateX(-2950px);
+    }
+  }
+
+
 .road{
     margin: 0 auto;
     width: 1280px;
@@ -14,14 +67,71 @@
 .line{
     
     width: 1280px;
-    height: 2px;
+    height: 4px;
     background-color: yellow;
     position: absolute;
     top: 40%;
+   
     
 }
+.zebra{
+    left: 100%;
+    width: 70px;
+    height:140px ;
+    display: inline-block;
+    position: relative;
+    animation-name: zebra;
+	animation-duration: 20s;
+	animation-delay:1s ;
+	animation-timing-function:linear ;
+	
+	animation-iteration-count:infinite ;
+   
+
+}
+@keyframes zebra{
+    form{right:100%;}
+    to{left: 0%;}
+}
+.zebra1 {
+  width:70px ;
+  height: 15px;
+  background-color: white;
+  display: block;
+}
+.zebra2 {
+    width:70px ;
+    height: 15px;
+    background-color: white;
+    display: block;
+  }
+  .zebra3 {
+    width:70px ;
+    height: 15px;
+    background-color: white;
+    display: block;
+  }
+  .zebra4 {
+    width:70px ;
+    height: 15px;
+    background-color: white;
+    display: block;
+  }
+
+
 .car{
    
     margin-left: 100px;
+    position: absolute;
+    animation-name: car;
+    animation-duration: 1s;
+    animation-iteration-count:infinite ;
+
  
 }
+@keyframes car{
+    form{top:0%;}
+    to{bottom: 0%;}
+    
+}
+
