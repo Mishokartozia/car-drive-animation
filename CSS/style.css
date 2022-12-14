@@ -9,14 +9,20 @@
 .night{
     border: 1px solid black;
     overflow: hidden;
-  
+  transition-property: all;
+  transition-duration: 3s;
+  transition-timing-function: linear;
     margin: 0 auto;
     width: 1280px;
     height: 874px;
     position: relative;
     background-image: url(https://github.com/Mishokartozia/car-drive-animation/blob/main/images/nightsky2.png?raw=true)
     
+  
    
+}
+.night:hover{
+  background-image: url(https://www.solidbackgrounds.com/images/1280x720/1280x720-cyan-solid-color-background.jpg);
 }
 .moon{
     position: absolute;
@@ -26,6 +32,12 @@
 	animation-timing-function:eses-in-out ;
 	
 	animation-iteration-count:infinite ;
+  transition-property: all;
+  transition-duration: 3s;
+  transition-timing-function: linear;
+}
+.moon:hover{
+background-image: ;
 }
 @keyframes moon{
     0% {left:0%;}
