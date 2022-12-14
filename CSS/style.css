@@ -23,7 +23,10 @@
    
 }
 .night:hover{
+ 
   background-image: url(https://www.solidbackgrounds.com/images/1280x720/1280x720-cyan-solid-color-background.jpg);
+
+  z-index: 100;
 }
 .moon{
     position: absolute;
@@ -37,18 +40,21 @@
   transition-duration: 3s;
   transition-timing-function: linear;
   z-index: 5;
+  width: 300px;
+  height: 300px;
 
   
 }
-.moon:hover{
-background-image: url();
-width: 200px;
-height: 200px;
-border-radius: 50%;
-z-index: 6;
+/* .moon:hover{
+background-image: url(https://github.com/Mishokartozia/car-drive-animation/blob/main/images/sun3.png?raw=true);
+width: 300px;
+height: 300px;
+
+z-index: 8;
 
 
-}
+
+} */
 /* @keyframes moon{
     0% {left:0%;}
     25%{left: 2%;}
@@ -57,6 +63,7 @@ z-index: 6;
 } */
 
 .plane{
+  z-index: 10;
   position: absolute;
   left: 82%;
   width: 200px;
@@ -78,6 +85,7 @@ z-index: 6;
 }
 .city{
     position: relative;
+    
     /* animation-name: city;
 	animation-duration: 10s;
 	animation-delay:1s ;
@@ -96,6 +104,7 @@ z-index: 6;
     100% {
       transform: translateX(-2950px);
     }
+    
   }
 
 
